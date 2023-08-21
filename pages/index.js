@@ -1,4 +1,3 @@
-import "semantic-ui-css/semantic.min.css";
 import React from "react";
 import factory from "../ethereum/factory";
 import { Card, Button } from "semantic-ui-react";
