@@ -12,6 +12,7 @@ const web3 = new Web3(provider);
 const deploy = async () => {
 	const accounts = await web3.eth.getAccounts();
 
+	// metamask sepoliaETH wallet account
 	console.log("Attempting to deploy from account", accounts[0]);
 
 	const result = await new web3.eth.Contract(
@@ -23,5 +24,5 @@ const deploy = async () => {
 	console.log("Contract deployed to", result.options.address);
 	provider.engine.stop();
 };
-// deploy address: 0x373F441F9cf42C81A5b6C93901A8c14b5c2CbF8D
+// deploy address: 0xDE01d468edc68D3402eda9997f8A68e4a8AC956A
 deploy();
